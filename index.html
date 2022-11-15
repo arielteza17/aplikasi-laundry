@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Permana</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-192.png">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <div id="content-order">
+
+        <h1 class="text-center text-light">Laundry Permana</h1>
+        <div class="container">
+            <img src="assets/images/bg.png" id="bg-main">
+        </div>
+        <div class="card m-2">
+            <div class="card-body">
+                <h5>Jenis Laundry:</h5>
+                <ul>
+                    <li >Baju Kaos : Rp 10.000/Kg</li>
+                    <li >Baju Kameja : Rp 20.000/Kg</li>
+                    <li >Celana : Rp 15.000/Kg</li>
+                    <li >Karpet : Rp 30.000/Satuan</li>
+                    <li >Selimut : Rp 25.000/Satuan</li>
+                    <li >Gorden : Rp 20.000/Satuan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card m-2">
+            <div class="card-body">
+                <h5>Pilih Jenis Laundry</h5>
+                <div>
+                    <select class="form-control" id="input-menu">
+                        
+                    </select>
+                </div>
+                <h5>Jumlah Satuan/Kg</h5>
+                <div>
+                    <input class="form-control" type="number" id="input-jumlah" value="1">
+                </div>
+                <button class="btn btn-sm btn-dark mt-3" type="button" onclick="addBarang()">Tambah</button>
+            </div>
+        </div>
+
+        <div id="list-barang" class="m-2">
+            
+        </div>
+
+        <div id="footer" class="border-top">
+            <div class="f-bold pt-2 pb-2 pl-3 pr-3">
+                <span>Total</span>
+                <span class="float-right" id="grandtotal">Rp 0</span>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/register.js"></script>
+</body>
+</html>
